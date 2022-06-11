@@ -57,7 +57,7 @@ pipeline {
             steps {
                 script{
                     sh ''' 
-                        firewall-cmd --zone=public --add-port=$(puerto_imagen)/tcp --permanent
+                        firewall-cmd --zone=public --add-port=${puerto_imagen}/tcp --permanent
 					'''
 					sh ''' 
                        
