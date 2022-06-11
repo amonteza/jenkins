@@ -16,5 +16,5 @@ RUN apt-get update && apt-get install -y \
 
 COPY  . /var/www/html/
 WORKDIR /var/www/html/
-
+RUN ls /var/www/html/ -l
 RUN chmod 777 /var/www/html/ -Rf
