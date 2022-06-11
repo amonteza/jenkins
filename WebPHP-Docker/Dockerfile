@@ -13,6 +13,6 @@ RUN apt-get update && apt-get install -y \
         && docker-php-ext-install pdo pdo_mysql pdo_pgsql zip intl xmlrpc soap opcache \
         && docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd \
         && apt-get install vim -y
-
+RUN chmod 777 /var/www/html/ -Rf
 COPY  . /var/www/html/
 WORKDIR /var/www/html/
