@@ -18,3 +18,4 @@ COPY  . /var/www/html/
 WORKDIR /var/www/html/
 RUN ls /var/www/html/ -l
 RUN chmod 777 /var/www/html/ -Rf
+RUN ls /var/www/html/ -l
