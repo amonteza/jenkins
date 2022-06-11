@@ -53,22 +53,7 @@ pipeline {
                                   
             }
 			
-			stage('firewall') {
-            steps {
-                script{
-                    sh ''' 
-                        sudo firewall-cmd --zone=public --add-port=${puerto_imagen}/tcp --permanent
-					'''
-					sh ''' 
-                       
-						firewall-cmd --reload 
-                    '''
-                    }
-                    
-                }                    
-                                  
-            }
-            
+           
           
         }   
     }
